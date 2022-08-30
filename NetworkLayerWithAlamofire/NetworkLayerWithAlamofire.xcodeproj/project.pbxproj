@@ -12,9 +12,12 @@
 		BED1E4D428BE00B100A1F013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4D328BE00B100A1F013 /* ViewController.swift */; };
 		BED1E4D928BE00B300A1F013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED1E4D828BE00B300A1F013 /* Assets.xcassets */; };
 		BED1E4DC28BE00B300A1F013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED1E4DA28BE00B300A1F013 /* LaunchScreen.storyboard */; };
-		BED1E4EE28BE242C00A1F013 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4ED28BE242C00A1F013 /* User.swift */; };
 		BEEFD98428BE6046003D8ADE /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD98328BE6046003D8ADE /* TargetType.swift */; };
 		BEEFD98828BE6147003D8ADE /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD98728BE6147003D8ADE /* BaseAPI.swift */; };
+		BEEFD98A28BE7EFB003D8ADE /* PostsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD98928BE7EFB003D8ADE /* PostsNetworking.swift */; };
+		BEEFD98C28BE806A003D8ADE /* PostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD98B28BE806A003D8ADE /* PostsAPI.swift */; };
+		BEEFD99128BE9333003D8ADE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD99028BE9333003D8ADE /* PostModel.swift */; };
+		BEEFD99428BE9984003D8ADE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD99328BE9984003D8ADE /* Constants.swift */; };
 		F5FF6FD546D57C6F5BD55BA7 /* Pods_NetworkLayerWithAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C8367E1968F876C0BC6EF /* Pods_NetworkLayerWithAlamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +31,12 @@
 		BED1E4D828BE00B300A1F013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED1E4DB28BE00B300A1F013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED1E4DD28BE00B300A1F013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BED1E4ED28BE242C00A1F013 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BEEFD98328BE6046003D8ADE /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		BEEFD98728BE6147003D8ADE /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		BEEFD98928BE7EFB003D8ADE /* PostsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsNetworking.swift; sourceTree = "<group>"; };
+		BEEFD98B28BE806A003D8ADE /* PostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPI.swift; sourceTree = "<group>"; };
+		BEEFD99028BE9333003D8ADE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		BEEFD99328BE9984003D8ADE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8F5A6316B46C526EF976442 /* Pods-NetworkLayerWithAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerWithAlamofire.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerWithAlamofire/Pods-NetworkLayerWithAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +81,7 @@
 				BED1E4D828BE00B300A1F013 /* Assets.xcassets */,
 				BED1E4DA28BE00B300A1F013 /* LaunchScreen.storyboard */,
 				BED1E4DD28BE00B300A1F013 /* Info.plist */,
+				BEEFD99328BE9984003D8ADE /* Constants.swift */,
 			);
 			path = NetworkLayerWithAlamofire;
 			sourceTree = "<group>";
@@ -82,7 +89,7 @@
 		BED1E4EC28BE240C00A1F013 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BED1E4ED28BE242C00A1F013 /* User.swift */,
+				BEEFD99028BE9333003D8ADE /* PostModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,10 +97,28 @@
 		BEEFD98228BE602A003D8ADE /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				BEEFD98328BE6046003D8ADE /* TargetType.swift */,
-				BEEFD98728BE6147003D8ADE /* BaseAPI.swift */,
+				BEEFD98F28BE83C1003D8ADE /* Base */,
+				BEEFD99228BE9933003D8ADE /* Posts */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		BEEFD98F28BE83C1003D8ADE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BEEFD98728BE6147003D8ADE /* BaseAPI.swift */,
+				BEEFD98328BE6046003D8ADE /* TargetType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BEEFD99228BE9933003D8ADE /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				BEEFD98B28BE806A003D8ADE /* PostsAPI.swift */,
+				BEEFD98928BE7EFB003D8ADE /* PostsNetworking.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 		D9BEF648CC6C4531E323F5C3 /* Pods */ = {
@@ -227,11 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEFD99128BE9333003D8ADE /* PostModel.swift in Sources */,
 				BED1E4D428BE00B100A1F013 /* ViewController.swift in Sources */,
-				BED1E4EE28BE242C00A1F013 /* User.swift in Sources */,
+				BEEFD98C28BE806A003D8ADE /* PostsAPI.swift in Sources */,
 				BED1E4D028BE00B100A1F013 /* AppDelegate.swift in Sources */,
+				BEEFD99428BE9984003D8ADE /* Constants.swift in Sources */,
 				BEEFD98828BE6147003D8ADE /* BaseAPI.swift in Sources */,
 				BEEFD98428BE6046003D8ADE /* TargetType.swift in Sources */,
+				BEEFD98A28BE7EFB003D8ADE /* PostsNetworking.swift in Sources */,
 				BED1E4D228BE00B100A1F013 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
