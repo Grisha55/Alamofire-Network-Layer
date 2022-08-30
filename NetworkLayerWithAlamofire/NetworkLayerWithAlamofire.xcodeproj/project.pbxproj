@@ -13,6 +13,8 @@
 		BED1E4D928BE00B300A1F013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED1E4D828BE00B300A1F013 /* Assets.xcassets */; };
 		BED1E4DC28BE00B300A1F013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED1E4DA28BE00B300A1F013 /* LaunchScreen.storyboard */; };
 		BED1E4EE28BE242C00A1F013 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4ED28BE242C00A1F013 /* User.swift */; };
+		BEEFD98428BE6046003D8ADE /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD98328BE6046003D8ADE /* TargetType.swift */; };
+		BEEFD98828BE6147003D8ADE /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD98728BE6147003D8ADE /* BaseAPI.swift */; };
 		F5FF6FD546D57C6F5BD55BA7 /* Pods_NetworkLayerWithAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C8367E1968F876C0BC6EF /* Pods_NetworkLayerWithAlamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		BED1E4DB28BE00B300A1F013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED1E4DD28BE00B300A1F013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED1E4ED28BE242C00A1F013 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BEEFD98328BE6046003D8ADE /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		BEEFD98728BE6147003D8ADE /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		C8F5A6316B46C526EF976442 /* Pods-NetworkLayerWithAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerWithAlamofire.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerWithAlamofire/Pods-NetworkLayerWithAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,7 @@
 		BED1E4CE28BE00B100A1F013 /* NetworkLayerWithAlamofire */ = {
 			isa = PBXGroup;
 			children = (
+				BEEFD98228BE602A003D8ADE /* NetworkLayer */,
 				BED1E4EC28BE240C00A1F013 /* Model */,
 				BED1E4CF28BE00B100A1F013 /* AppDelegate.swift */,
 				BED1E4D128BE00B100A1F013 /* SceneDelegate.swift */,
@@ -80,6 +85,15 @@
 				BED1E4ED28BE242C00A1F013 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BEEFD98228BE602A003D8ADE /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				BEEFD98328BE6046003D8ADE /* TargetType.swift */,
+				BEEFD98728BE6147003D8ADE /* BaseAPI.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		D9BEF648CC6C4531E323F5C3 /* Pods */ = {
@@ -216,6 +230,8 @@
 				BED1E4D428BE00B100A1F013 /* ViewController.swift in Sources */,
 				BED1E4EE28BE242C00A1F013 /* User.swift in Sources */,
 				BED1E4D028BE00B100A1F013 /* AppDelegate.swift in Sources */,
+				BEEFD98828BE6147003D8ADE /* BaseAPI.swift in Sources */,
+				BEEFD98428BE6046003D8ADE /* TargetType.swift in Sources */,
 				BED1E4D228BE00B100A1F013 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
