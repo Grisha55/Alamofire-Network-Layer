@@ -12,10 +12,6 @@
 		BED1E4D428BE00B100A1F013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4D328BE00B100A1F013 /* ViewController.swift */; };
 		BED1E4D928BE00B300A1F013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED1E4D828BE00B300A1F013 /* Assets.xcassets */; };
 		BED1E4DC28BE00B300A1F013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED1E4DA28BE00B300A1F013 /* LaunchScreen.storyboard */; };
-		BED1E4E528BE184700A1F013 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4E428BE184700A1F013 /* APIRouter.swift */; };
-		BED1E4E728BE1A9000A1F013 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4E628BE1A9000A1F013 /* Constants.swift */; };
-		BED1E4E928BE1B6500A1F013 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4E828BE1B6500A1F013 /* APIConfiguration.swift */; };
-		BED1E4EB28BE1BA600A1F013 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4EA28BE1BA600A1F013 /* UserEndpoint.swift */; };
 		BED1E4EE28BE242C00A1F013 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1E4ED28BE242C00A1F013 /* User.swift */; };
 		F5FF6FD546D57C6F5BD55BA7 /* Pods_NetworkLayerWithAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C8367E1968F876C0BC6EF /* Pods_NetworkLayerWithAlamofire.framework */; };
 /* End PBXBuildFile section */
@@ -30,10 +26,6 @@
 		BED1E4D828BE00B300A1F013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED1E4DB28BE00B300A1F013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED1E4DD28BE00B300A1F013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BED1E4E428BE184700A1F013 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
-		BED1E4E628BE1A9000A1F013 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		BED1E4E828BE1B6500A1F013 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
-		BED1E4EA28BE1BA600A1F013 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
 		BED1E4ED28BE242C00A1F013 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8F5A6316B46C526EF976442 /* Pods-NetworkLayerWithAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerWithAlamofire.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerWithAlamofire/Pods-NetworkLayerWithAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				BED1E4EC28BE240C00A1F013 /* Model */,
-				BED1E4E328BE16E000A1F013 /* NetworkLayer */,
 				BED1E4CF28BE00B100A1F013 /* AppDelegate.swift */,
 				BED1E4D128BE00B100A1F013 /* SceneDelegate.swift */,
 				BED1E4D328BE00B100A1F013 /* ViewController.swift */,
@@ -81,17 +72,6 @@
 				BED1E4DD28BE00B300A1F013 /* Info.plist */,
 			);
 			path = NetworkLayerWithAlamofire;
-			sourceTree = "<group>";
-		};
-		BED1E4E328BE16E000A1F013 /* NetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				BED1E4E428BE184700A1F013 /* APIRouter.swift */,
-				BED1E4E628BE1A9000A1F013 /* Constants.swift */,
-				BED1E4E828BE1B6500A1F013 /* APIConfiguration.swift */,
-				BED1E4EA28BE1BA600A1F013 /* UserEndpoint.swift */,
-			);
-			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		BED1E4EC28BE240C00A1F013 /* Model */ = {
@@ -233,12 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED1E4E728BE1A9000A1F013 /* Constants.swift in Sources */,
-				BED1E4EB28BE1BA600A1F013 /* UserEndpoint.swift in Sources */,
-				BED1E4E928BE1B6500A1F013 /* APIConfiguration.swift in Sources */,
 				BED1E4D428BE00B100A1F013 /* ViewController.swift in Sources */,
 				BED1E4EE28BE242C00A1F013 /* User.swift in Sources */,
-				BED1E4E528BE184700A1F013 /* APIRouter.swift in Sources */,
 				BED1E4D028BE00B100A1F013 /* AppDelegate.swift in Sources */,
 				BED1E4D228BE00B100A1F013 /* SceneDelegate.swift in Sources */,
 			);
